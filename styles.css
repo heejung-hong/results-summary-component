@@ -6,8 +6,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
   justify-content: center;
   align-items: center;
 }
@@ -15,8 +15,7 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 600px;
+  width: 602px;
   height: 450px;
   border-radius: 25px;
   box-shadow: 10px 20px 30px hsl(221, 100%, 96%);
@@ -27,7 +26,6 @@ body {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   text-align: center;
   color: hsl(0, 0%, 100%);
-  font-size: 18px;
   width: 300px;
   height: 450px;
   border-radius: 25px;
@@ -45,47 +43,42 @@ body {
   width: 300px;
   height: 450px;
   border-radius: 25px;
+  padding: 30px;
 }
 
 .reaction {
   background-color: hsla(0, 100%, 67%, 0.1);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .memory {
   background-color: hsla(39, 100%, 56%, 0.1);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .verbal {
   background-color: hsla(166, 100%, 37%, 0.1);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .visual {
-  background-color: hsla(234, 85%, 45%, 0.1);
+  background-color: hsla(234, 85%, 45%, 0.1); 
+}
+
+.reaction, .memory, .verbal, .visual {
   border-radius: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 240px;
+  height: 50px;
+  margin: 15px 0px;
+  justify-content: space-between;
 }
-
-
 
 button {
   background-color: hsl(224, 30%, 27%);
   color: hsl(0, 0%, 100%);
-  width: 175px;
-  height: 25px;
+  width: 240px;
+  height: 50px;
+  margin: 15px 0px;
   border: none;
   border-radius: 25px;
 }
