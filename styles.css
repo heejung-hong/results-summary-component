@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Hanken Grotesk", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   justify-content: center;
   align-items: center;
 }
@@ -50,64 +50,6 @@ body {
   background-color: hsla(0, 100%, 67%, 0.1);
 }
 
-.curveTR {
-  position: absolute;
-  z-index: -1;
-  border: 2px solid hsla(0, 100%, 67%, 0.2);
-  right: 0;
-  top: 0;
-  rotate: 315deg;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  border-top-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-}
-
-.curveTL {
-  position: absolute;
-  z-index: -1;
-  border: 2px solid hsla(0, 100%, 67%, 0.2);
-  top: 0;
-  rotate: 225deg;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  border-top-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-}
-
-.curveBL {
-  position: absolute;
-  z-index: -1;
-  border: 2px solid hsla(0, 100%, 67%, 0.2);
-  bottom: 0;
-  rotate: 135deg;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  border-top-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-}
-
-.curveBR {
-  position: absolute;
-  z-index: -1;
-  border: 2px solid hsla(0, 100%, 67%, 0.2);
-  bottom: 0;
-  right: 0;
-  rotate: 45deg;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  border-top-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-}
-
 .memory {
   background-color: hsla(39, 100%, 56%, 0.1);
 }
@@ -120,26 +62,6 @@ body {
   background-color: hsla(234, 85%, 45%, 0.1); 
 }
 
-.right {
-  transform: rotate(-30deg);
-  -webkit-transform: rotate(-30deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
 .reaction, .memory, .verbal, .visual {
   border-radius: 10px;
   display: flex;
@@ -150,6 +72,60 @@ body {
   margin: 15px 0px;
   justify-content: space-between;
   position: relative;
+  font-size: 16px;
+}
+
+.curveTR {
+  right: 0;
+  top: 0;
+  rotate: 315deg;
+}
+
+.curveTL {
+  top: 0;
+  rotate: 225deg;
+}
+
+.curveBL {
+  bottom: 0;
+  rotate: 135deg;
+}
+
+.curveBR {
+  bottom: 0;
+  right: 0;
+  rotate: 45deg;
+}
+
+.curveR, .curveM, .curveVe, .curveVi {
+  position: absolute;
+  z-index: -1;
+  width: 16px;
+  height: 16px;
+}
+
+.curveR {
+  border: solid hsla(0, 100%, 67%, 0.15);
+  border-radius: 7px;
+  border-width: 0 2px 0 0;
+}
+
+.curveM {
+  border: solid hsla(39, 100%, 56%, 0.15);
+  border-radius: 7px;
+  border-width: 0 2px 0 0;
+}
+
+.curveVe {
+  border: solid hsla(166, 100%, 37%, 0.15);
+  border-radius: 7px;
+  border-width: 0 2px 0 0;
+}
+
+.curveVi {
+  border: solid hsla(234, 85%, 45%, 0.15);
+  border-radius: 7px;
+  border-width: 0 2px 0 0;
 }
 
 button {
@@ -160,6 +136,7 @@ button {
   margin: 15px 0px;
   border: none;
   border-radius: 25px;
+  font-size: 17px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
