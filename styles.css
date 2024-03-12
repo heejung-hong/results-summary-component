@@ -2,16 +2,63 @@
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 300px) {
   /* For desktop: */
-  .col-3 {width: 300px; height: 450px;}
-  .col-6 {width: 302px; height: 902px;}
+  .container {
+    width: 300px; 
+    height: 680px; 
+    margin: 0 0 30px 0;
+  }
+  .containerOne, .containerTwo {width: 300px; height: 340px;}
+  .yourResult {padding: 35px 0 15px 0;}
+  .numerator {padding-top: 30px;}
+  .great {padding: 15px 0px 10px 0px;}
+  .reaction, .memory, .verbal, .visual {
+    width: 240px;
+    height: 40px;
+    margin: 10px 0px;
+  }
+  .circle {
+    width: 140px;
+    height: 140px;
+  }
+  .scored {width: 240px;}
+  .summary {padding: 0 0 5px 0;}
+  button {
+    width: 240px;
+    height: 40px;
+    margin: 10px 0px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  .col-3 {width: 300px; height: 450px;}
-  .col-6 {width: 602px; height: 450px; display: flex; flex-direction: row;}
+  .container {
+    width: 600px; 
+    height: 450px; display: 
+    flex; flex-direction: row;
+    margin: 0 0 100px 0;
+  }
+  .containerOne, .containerTwo {width: 300px; height: 450px;}
+  .yourResult {padding: 35px 0;}
+  .numerator {padding-top: 47px;}
+  .great {padding: 30px 0px 20px 0px;}
+  .reaction, .memory, .verbal, .visual {
+    width: 240px;
+    height: 50px;
+    margin: 15px 0px;
+  }
+  .circle {
+    width: 175px;
+    height: 175px;
+  }
+  .scored {width: 200px;}
+  .summary {padding: 5px 0 15px 0;}
+  button {
+    width: 240px;
+    height: 50px;
+    margin: 15px 0px;
+  }
 }
 
 body {
@@ -27,27 +74,55 @@ body {
 .container {
   border-radius: 25px;
   box-shadow: 10px 20px 30px hsl(221, 100%, 96%);
-  margin: 0 0 100px 0;
 }
 
-.result {
+.containerOne {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   text-align: center;
   color: hsl(0, 0%, 100%);
   border-radius: 25px;
 }
 
+.yourResult {
+  color: hsl(241, 100%, 89%);
+}
+
+.numerator {
+  font-size: 50px; 
+  font-weight: bold;
+}
+
+.denominator {
+  color: hsl(241, 100%, 89%); 
+  font-size: 14px;
+}
+
+.great {
+  width: 225px; 
+  margin: auto; 
+  font-size: 25px; 
+  font-weight: 500; 
+}
+
+.scored {
+  color: hsl(241, 100%, 89%); 
+  margin: auto; 
+  font-size: 14px;
+}
 .circle {
   background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   margin: auto;
-  width: 175px;
-  height: 175px;
   border-radius: 50%;
 }
 
-.summary {
+.containerTwo {
   border-radius: 25px;
   padding: 30px;
+}
+
+.summary {
+  color: hsl(224, 30%, 27%); 
+  font-weight: bold; 
 }
 
 .reaction {
@@ -71,9 +146,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 240px;
-  height: 50px;
-  margin: 15px 0px;
   justify-content: space-between;
   position: relative;
   font-size: 16px;
@@ -135,9 +207,6 @@ body {
 button {
   background-color: hsl(224, 30%, 27%);
   color: hsl(0, 0%, 100%);
-  width: 240px;
-  height: 50px;
-  margin: 15px 0px;
   border: none;
   border-radius: 25px;
   font-size: 17px;
